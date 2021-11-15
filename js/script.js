@@ -9,11 +9,11 @@ if((age < 65) && (age > 18 )){
 }
 
 else if(age > 65){
-    priceCalculated *= 0.4;
+    priceCalculated -= (priceCalculated*0.4);
 }
 
 else {
-    priceCalculated *= 0.2; 
+    priceCalculated -= (priceCalculated*0.2);
 }
 
 priceCalculated = priceCalculated.toFixed(2);
